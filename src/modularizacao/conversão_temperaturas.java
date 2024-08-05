@@ -32,9 +32,9 @@ public class conversão_temperaturas {
 	
 	public static void menu() {
 
-		System.out.println("Deseja converter de Celsius para Fah digite 1");
-		System.out.println("Deseja converter de Fah para Celsius digite 2");
-		System.out.println("Para finalizar digite 0");
+		System.out.println("Para converter de Celsius para Fah digite 1");
+		System.out.println("Para converter de Fah para Celsius digite 2");
+		System.out.println("Finalizar digite 0");
 		System.out.print("Digite sua opção: ");
 
 	}
@@ -50,8 +50,6 @@ public class conversão_temperaturas {
 		double result = (temp * 1.8) + 32;
 		return result;
 	}
-
-
 	
 	
 	public static void main(String[] args) {
@@ -79,7 +77,6 @@ public class conversão_temperaturas {
 				fah = celsiusToFar(celsius);
 				System.out.println("O valor foi de: " + fah);
 
-				
 				break;
 
 			case 2:
@@ -91,8 +88,10 @@ public class conversão_temperaturas {
 					fah = in.nextDouble();
 					in.nextLine();
 				}
+		
 				celsius = farToCelsius(fah);
 				System.out.println("O valor foi de: " + celsius);
+				
 				break;
 
 			case 0:
@@ -107,7 +106,4 @@ public class conversão_temperaturas {
 		} while (option != 0);
 
 	}
-
-	
-
 }
