@@ -24,18 +24,6 @@ responder S ou N. O programa não deve aceitar nenhum outro valor de resposta.
 
 public class Banco {
 
-	public static double valida (double valor) {
-		
-		double saldo = 0;
-		
-		if(saldo < 0) {
-			System.out.println("Não tem direito");
-						 
-		} else { credito (saldo);   }
-		return saldo;	
-		
-	}
-	
 	
 	public static double credito(double saldo) {
 
@@ -65,12 +53,12 @@ public class Banco {
 			saldo = in.nextDouble();
 			in.nextLine();
 			
-			 valida(saldo);
-			System.out.println("Seu saldo foi de: " + validaSaldo + " assim vamos avaliar seu credito");
+			 
+			System.out.println("Seu saldo foi de: " + saldo + " assim vamos avaliar seu credito");
 			
-			validaCredito = credito(validaSaldo);
+			validaCredito = credito(saldo);
 			
-			System.out.println("Seu crédito foi de: " + validaCredito);
+			System.out.println("Seu crédito foi de: R$" + validaCredito);
 			
 			
 			System.out.println("Deseja continuar digite S para sim e N para nope: ");
@@ -84,8 +72,6 @@ public class Banco {
 			}
 			
 		} while (resp != 'N');
-		
-		
 		
 	}
 
