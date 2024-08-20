@@ -62,8 +62,7 @@ public class ConverterTime {
 			switch (option) {
 
 			case 1:
-				System.out.println(
-						"Optou por converter um tempo expresso em horas e minutos para um tempo expresso apenas em minutos: ");
+				System.out.println("Optou por converter um tempo expresso em horas e minutos para um tempo expresso apenas em minutos: ");
 				System.out.println("Digite as horas: ");
 
 				horas = in.nextInt();
@@ -84,8 +83,7 @@ public class ConverterTime {
 					in.nextLine();
 				}
 
-				horasConvertidas = convertMinutos(horas, minutos); // Por ser função vamos atribuir uma variável e
-																	// chamar a função passando os inputs
+				horasConvertidas = convertMinutos(horas, minutos); // Por ser função vamos atribuir uma variável e chamar a função passando os inputs
 				System.out.println("Deu tudo: " + horasConvertidas);
 
 				break;
@@ -98,9 +96,6 @@ public class ConverterTime {
 				in.nextLine();
 				
 				horasMinutos(minutos);
-				
-				
-				
 				
 				break;
 			case 0:
@@ -123,7 +118,7 @@ public class ConverterTime {
 			}
 
 		} while (resp == 'S');
-
+System.out.println("Acabou");
 	}
 
 }
