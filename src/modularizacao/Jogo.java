@@ -1,5 +1,4 @@
 package modularizacao;
-
 import java.util.Scanner;
 
 /* Imagine que para as semifinais da Copa do Mundo Fifa 2020 irão as  seguintes seleções: A- Brasil, B- França, C – Uruguai e D – Japão.
@@ -63,7 +62,7 @@ public class Jogo {
 			jaGoal = in.nextInt();
 			in.nextLine();
 		}
-	Informa(brGoal, frGoal, jaGoal, uruGoal );
+	Informa(brGoal, frGoal, jaGoal, uruGoal);
 	
 
 	}
@@ -73,7 +72,6 @@ public class Jogo {
 		if (x > y) {
 			return 1;
 		} else { return 2;  }
-
 	}
 
 	public static void Informa(int brGoal,int frGoal,int jaGoal,int uruGoal) {
@@ -91,7 +89,5 @@ public class Jogo {
 		} else {
 			System.out.println("Urugai ganhou vai na final");
 		}
-		
 	}
-
 }
