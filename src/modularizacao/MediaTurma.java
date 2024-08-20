@@ -48,7 +48,7 @@ public class MediaTurma {
 			resp = Character.toUpperCase(resp);
 			
 			
-		}while (resp == 'S' && cont < 3);
+		}while (resp == 'S' && cont < 3);   /* Ao colocar cont < 3 faz com o que o programa encerre no 3 aluno!!!*/
 
 	}
 
