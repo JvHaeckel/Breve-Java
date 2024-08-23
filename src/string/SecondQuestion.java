@@ -11,7 +11,7 @@ public class SecondQuestion {
 
 		String frase;
 		char caracter , caractere;
-		int tam, i, vezes = 0;
+		int tam, i, vezes = 0, space = 0;
 		
 		System.out.print("Digite uma frase: ");
 		frase = in.nextLine();
@@ -26,11 +26,15 @@ public class SecondQuestion {
 		
 		for(i = 0 ; i < tam; i ++) {
 			
+
+	/* charAt - função de String que retorna caractere em uma posição*/
 			caractere = frase.charAt(i);
 			caractere = Character.toLowerCase(caractere);
 			
 			if(caractere == caracter) {
 				vezes ++;
+			} else if(caractere == ' ') {
+				space ++;
 			}
 			
 		}
